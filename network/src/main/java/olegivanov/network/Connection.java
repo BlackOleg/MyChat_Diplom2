@@ -11,7 +11,10 @@ public class Connection {
     private final BufferedWriter out;
     private final ConnectionListener eventListener;
 
-    public Connection(ConnectionListener eventListener,Socket socket) throws IOException {
+    public Connection(ConnectionListener eventListener, String ipAddress, int port) throws IOException{
+        this(eventListener, new Socket(ipAddress,port));
+    }
+    public Connection(ConnectionListener eventListener, Socket socket) throws IOException {
         this.eventListener = eventListener;
         this.socket = socket;
         in = new BufferedReader(new InputStreamReader(socket.getInputStream(), Charset.forName("UTF-8")));
@@ -20,15 +23,42 @@ public class Connection {
             @Override
             public void run() {
                 try {
-                    String msg = in.readLine();
+                    eventListener.onConnectionReady(Connection.this);
+                    while (!rxThread.isAlive()) {
+                        eventListener.onReceiveString(Connection.this, in.readLine());
+                    }
+
                 } catch (IOException e) {
-
+                    eventListener.onException(Connection.this, e);
                 } finally {
-
+                    eventListener.onDisconnect(Connection.this);
                 }
 
             }
         });
         rxThread.start();
+    }
+
+    public synchronized void sendMsg(String msg) {
+        try {
+            out.write(msg + "\r\n");
+            out.flush();
+        } catch (IOException e) {
+            eventListener.onException(Connection.this, e);
+            disconnect();
+        }
+    }
+
+    public synchronized void disconnect() {
+        rxThread.interrupt();
+        try {
+            socket.close();
+        } catch (IOException e) {
+            eventListener.onException(Connection.this, e);
+        }
+    }
+    @Override
+    public String toString() {
+        return "TCPConnection: " + socket.getInetAddress()+ " port: " +socket.getPort();
     }
 }
