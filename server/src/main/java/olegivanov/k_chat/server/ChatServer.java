@@ -33,13 +33,13 @@ public class ChatServer implements ConnectionListener {
     @Override
     public synchronized void onConnectionReady(Connection connection) {
         connections.add(connection);
-        sendAll("Client connected " + connection);
+        sendAll("Client connected! WELCOME - " + connection);
     }
 
     @Override
     public synchronized void onReceiveString(Connection connection, String msg) {
-        if (msg=="exit") {
-         connection.disconnect();
+        if (msg.equals("exit")) {
+            connection.disconnect();
         }
         sendAll(connection + " says: " + msg);
     }
@@ -47,7 +47,7 @@ public class ChatServer implements ConnectionListener {
     @Override
     public synchronized void onDisconnect(Connection connection) {
         connections.remove(connection);
-        sendAll("Client disconnected " + connection);
+        sendAll("Client disconnected! GOODBYE - " + connection);
     }
 
     @Override
@@ -57,9 +57,9 @@ public class ChatServer implements ConnectionListener {
 
     private void sendAll(String value) {
         System.out.println(value);
-
-        for (Connection conn : connections) {
-            conn.sendMsg(value);
+        final int allI = connections.size();
+        for (int i = 0; i < allI; i++) {
+            connections.get(i).sendMsg(value);
         }
 
 

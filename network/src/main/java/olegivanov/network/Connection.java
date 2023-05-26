@@ -24,7 +24,7 @@ public class Connection {
             public void run() {
                 try {
                     eventListener.onConnectionReady(Connection.this);
-                    while (!rxThread.isAlive()) {
+                    while (rxThread.isAlive()) {
                         eventListener.onReceiveString(Connection.this, in.readLine());
                     }
 
@@ -59,6 +59,6 @@ public class Connection {
     }
     @Override
     public String toString() {
-        return "TCPConnection: " + socket.getInetAddress()+ " port: " +socket.getPort();
+        return "Guest with TCP: " + socket.getInetAddress()+ " port: " + socket.getPort();
     }
 }
