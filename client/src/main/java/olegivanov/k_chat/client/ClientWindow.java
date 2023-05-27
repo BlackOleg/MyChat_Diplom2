@@ -1,9 +1,15 @@
 package olegivanov.k_chat.client;
 
+import olegivanov.network.Connection;
+import olegivanov.network.ConnectionListener;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
 
-public class ClientWindow extends JFrame {
+public class ClientWindow extends JFrame implements ActionListener, ConnectionListener {
     private static String ip_addr = "127.0.0.1";
     private static  int port= 8189;
     private static final int WITH = 600;
@@ -13,6 +19,7 @@ public class ClientWindow extends JFrame {
     private static JTextField nickName = new JTextField();
     private final JLabel textLabel = new JLabel("Input your message: ");
     private final JTextField inputMessage = new JTextField();
+    private static Connection connection;
 
     public static void main(String[] args) {
         InputParameters();
@@ -29,21 +36,23 @@ public class ClientWindow extends JFrame {
         setSize(WITH, HEIGHT); // задаем размеры размеры по-умодчанию
         setLocationByPlatform(true); // расположение задает Windows
         setAlwaysOnTop(true); // всегда  поверх экрана
-        setTitle("Simple Messenger - " + nickName.getText()); // подписываем окно сообщений
+        setTitle("Simple Messenger - with user: " + nickName.getText()); // подписываем окно сообщений
         setResizable(true); // может менять размер
         msgFrame.setLineWrap(true); // включение Wrap on
         msgFrame.setEditable(false); // не редактируемый
+
         //add(userLabel,BorderLayout.NORTH);
         //add(nickName,BorderLayout.AFTER_LINE_ENDS);
         add(msgFrame, BorderLayout.CENTER); // добавляем компоненты ..
         add(textLabel, BorderLayout.SOUTH);
+        inputMessage.addActionListener(this); // слушаем нажатие энтер
         add(inputMessage, BorderLayout.AFTER_LAST_LINE);
 
 
         setVisible(true); // делаем видимым
     }
 
-    private static void InputParameters() {
+    private void InputParameters() {
         JTextField addressInput = new JTextField("127.0.0.1",15);
         JTextField portInput = new JTextField("8189",10);
         JTextField nickInput = new JTextField("Noname",15);
@@ -66,6 +75,36 @@ public class ClientWindow extends JFrame {
             ip_addr = addressInput.getText();
             port = Integer.parseInt(portInput.getText());
             nickName = nickInput;
+            try {
+                connection = new Connection(this,ip_addr,port);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent actionEvent) {
+
+    }
+
+    @Override
+    public void onConnectionReady(Connection connection) {
+
+    }
+
+    @Override
+    public void onReceiveString(Connection connection, String msg) {
+
+    }
+
+    @Override
+    public void onDisconnect(Connection connection) {
+
+    }
+
+    @Override
+    public void onException(Connection connection, Exception e) {
+
     }
 }
