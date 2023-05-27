@@ -7,8 +7,6 @@
     <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Server is working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ClientWindow">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="olegivanov.k_chat.server.ChatServer" />
       <module name="server" />
@@ -60,8 +58,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClientWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="olegivanov.k_chat.client.ClientWindow" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="olegivanov.k_chat.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientWindow" />
         <item itemvalue="Application.ChatServer" />
       </list>
     </recent_temporary>
@@ -96,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684182223690</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Server is working">
+      <created>1685106625144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685106625144</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
