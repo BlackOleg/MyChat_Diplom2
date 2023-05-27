@@ -48,11 +48,15 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
         inputMessage.addActionListener(this); // слушаем нажатие энтер
         add(inputMessage, BorderLayout.AFTER_LAST_LINE);
 
-
         setVisible(true); // делаем видимым
+        try {
+            connection = new Connection(this,ip_addr,port);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    private void InputParameters() {
+    private static void InputParameters() {
         JTextField addressInput = new JTextField("127.0.0.1",15);
         JTextField portInput = new JTextField("8189",10);
         JTextField nickInput = new JTextField("Noname",15);
@@ -75,11 +79,7 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
             ip_addr = addressInput.getText();
             port = Integer.parseInt(portInput.getText());
             nickName = nickInput;
-            try {
-                connection = new Connection(this,ip_addr,port);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+
         }
     }
 
