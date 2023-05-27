@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Server is working">
+    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Client window 1st stage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" afterDir="false" />
     </list>
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685106625144</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Client window 1st stage">
+      <created>1685200967103</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685200967103</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +141,7 @@
     <MESSAGE value="Connection UPD" />
     <MESSAGE value="Server is ready" />
     <MESSAGE value="Server is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server is working" />
+    <MESSAGE value="Client window 1st stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client window 1st stage" />
   </component>
 </project>
