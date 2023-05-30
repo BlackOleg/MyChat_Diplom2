@@ -1,5 +1,6 @@
 package olegivanov.k_chat.server;
 
+import olegivanov.network.Config;
 import olegivanov.network.Connection;
 import olegivanov.network.ConnectionListener;
 
@@ -10,14 +11,16 @@ import java.util.List;
 
 public class ChatServer implements ConnectionListener {
     public static void main(String[] args) {
-        new ChatServer();
+                new ChatServer();
     }
 
     private final List<Connection> connections = new ArrayList<>();
 
     private ChatServer() {
-        System.out.println("Server is running......");
-        try (ServerSocket serverSocket = new ServerSocket(8189)) {
+        Config config = new Config();
+        int port = config.getPort();
+        System.out.println("Server is running... on port: " + port);
+        try (ServerSocket serverSocket = new ServerSocket(port)) {
             while (true) {
                 try {
                     new Connection(this, serverSocket.accept());
@@ -38,7 +41,7 @@ public class ChatServer implements ConnectionListener {
 
     @Override
     public synchronized void onReceiveString(Connection connection, String msg) {
-        if (msg.equals("exit")) {
+        if (msg.equals("/exit")) {
             connection.disconnect();
         }
         sendAll(connection + " says: " + msg);

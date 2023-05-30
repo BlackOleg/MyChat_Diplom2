@@ -9,20 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>network</artifactId>
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.10.1</version>
-        </dependency>
-
-    </dependencies>
-
+    <groupId>olegivanov.logger</groupId>
+    <artifactId>logger</artifactId>
 
     <properties>
-        <gson.version>2.10.1</gson.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

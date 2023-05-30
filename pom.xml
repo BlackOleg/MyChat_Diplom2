@@ -12,6 +12,7 @@
         <module>server</module>
         <module>client</module>
         <module>network</module>
+        <module>logger</module>
     </modules>
 
     <properties>

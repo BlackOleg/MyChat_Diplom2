@@ -4,47 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Client window 1st stage - Dialog updated">
+    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Client window 2st stage - Connection v2">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/network/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jrt://C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.2.2/jbr!/java.base/java/lang/ClassLoader.class" root0="SKIP_INSPECTION" />
+    <setting file="jrt://C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.2.2/jbr!/java.base/jdk/internal/loader/BuiltinClassLoader.class" root0="SKIP_INSPECTION" />
+    <setting file="jrt://C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.2.2/jbr!/java.base/jdk/internal/loader/ClassLoaders.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2PSJnIXqV1kuObHUGes0jsrY61g" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "jbr-17",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Black/Netology/JD/Projects/Diploma2_ChatBot/server",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ClientWindow">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Black\Netology\JD\Projects\Diploma2_ChatBot\server" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ChatServer">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="olegivanov.k_chat.server.ChatServer" />
       <module name="server" />
@@ -73,8 +111,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientWindow" />
         <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.ClientWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685204098848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Client window 2st stage - Connection">
+      <created>1685205130795</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685205130795</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Client window 2st stage - Connection v2">
+      <created>1685205297871</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685205297871</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,12 +196,66 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Connection UPD" />
     <MESSAGE value="Server is ready" />
     <MESSAGE value="Server is working" />
     <MESSAGE value="Client window 1st stage" />
     <MESSAGE value="Client window 1st stage - Dialog updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client window 1st stage - Dialog updated" />
+    <MESSAGE value="Client window 2st stage - Connection" />
+    <MESSAGE value="Client window 2st stage - Connection v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client window 2st stage - Connection v2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Diploma2_ChatBot$ChatServer.ic" NAME="ChatServer Coverage Results" MODIFIED="1685474498621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>olegivanov.k_chat.server.*</FILTER>
+    </SUITE>
   </component>
 </project>

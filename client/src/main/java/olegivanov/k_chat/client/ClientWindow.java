@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class ClientWindow extends JFrame implements ActionListener, ConnectionListener {
     private static String ip_addr = "127.0.0.1";
-    private static  int port= 8189;
+    private static int port = 8189;
     private static final int WITH = 600;
     private static final int HEIGHT = 400;
     private final JTextArea msgFrame = new JTextArea();
@@ -50,20 +50,20 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
 
         setVisible(true); // делаем видимым
         try {
-            connection = new Connection(this,ip_addr,port);
+            connection = new Connection(this, ip_addr, port);
         } catch (IOException e) {
-            e.printStackTrace();
+            sendMessage("Connection Exception: " + e);
         }
     }
 
     private static void InputParameters() {
-        JTextField addressInput = new JTextField("127.0.0.1",15);
-        JTextField portInput = new JTextField("8189",10);
-        JTextField nickInput = new JTextField("Noname",15);
+        JTextField addressInput = new JTextField("127.0.0.1", 15);
+        JTextField portInput = new JTextField("8189", 10);
+        JTextField nickInput = new JTextField("Noname", 15);
 
         JPanel myPanel = new JPanel();
         myPanel.add(new JLabel("Server address: "));
-        myPanel.add(addressInput );
+        myPanel.add(addressInput);
         myPanel.add(Box.createHorizontalStrut(15)); //  spacer
         myPanel.add(new JLabel("Port:"));
         myPanel.add(portInput);
@@ -74,8 +74,8 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
         int result = JOptionPane.showConfirmDialog(null, myPanel,
                 "Please Enter Server address, port & your nick name", JOptionPane.OK_CANCEL_OPTION);
         if (result == JOptionPane.OK_OPTION && addressInput.getText().equals("")
-                                            && portInput.getText().equals("")
-                                            && nickInput.getText().equals("")) {
+                && portInput.getText().equals("")
+                && nickInput.getText().equals("")) {
             ip_addr = addressInput.getText();
             port = Integer.parseInt(portInput.getText());
             nickName = nickInput;
@@ -85,26 +85,40 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
 
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
+String msg = inputMessage.getText();
+if (msg.equals("")) return;
+inputMessage.setText(null);
+connection.sendMsg(nickName.getText() + " says: " + msg);
 
     }
 
     @Override
     public void onConnectionReady(Connection connection) {
-
+        sendMessage("Connection ready");
     }
 
     @Override
     public void onReceiveString(Connection connection, String msg) {
-
+    sendMessage(msg);
     }
 
     @Override
     public void onDisconnect(Connection connection) {
-
+        sendMessage("Connection closed");
     }
 
     @Override
     public void onException(Connection connection, Exception e) {
+        sendMessage("Connection Exception: " + e);
+    }
 
+    private synchronized void sendMessage(String msg) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                msgFrame.append(msg + "\n");
+                msgFrame.setCaretPosition(msgFrame.getDocument().getLength());
+            }
+        });
     }
 }
