@@ -11,9 +11,9 @@ import java.io.IOException;
 
 public class Config {
 
-    @SerializedName("ADDRESS")
+    @SerializedName("address")
     private String address;
-    @SerializedName("PORT")
+    @SerializedName("port")
     private int port;
 
     public String getAddress() {
@@ -49,7 +49,7 @@ public class Config {
         //System.out.println("DIR:  - " + System.getProperty("user.dir"));
         try (FileReader reader = new FileReader(file)) {
             //JsonElement json = gson.fromJson(reader, JsonElement.class);
-            System.out.println(gson.fromJson(reader, Config.class).address);
+           // System.out.println(gson.fromJson(reader, Config.class).address);
             return gson.fromJson(reader, Config.class);
         } catch (FileNotFoundException e) {
             System.out.println("Config File - NotFound - Error" + e.getMessage());
