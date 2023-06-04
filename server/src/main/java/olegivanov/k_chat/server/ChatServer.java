@@ -44,7 +44,7 @@ public class ChatServer implements ConnectionListener {
         if (msg.equals("/exit")) {
             connection.disconnect();
         }
-        sendAll(connection + " says: " + msg);
+        sendAll(connection + ":- " + msg);
     }
 
     @Override

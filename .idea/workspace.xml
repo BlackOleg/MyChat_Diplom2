@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Config class - updated 2">
-      <change afterPath="$PROJECT_DIR$/logger/src/main/java/olegivanov/logger/Log.java" afterDir="false" />
+    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Logger class - updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/olegivanov/logger/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/main/java/olegivanov/logger/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,26 +65,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;jbr-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Black/Netology/JD/Projects/Diploma2_ChatBot/server&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "jbr-17",
+    "last_opened_file_path": "C:/Black/Netology/JD/Projects/Diploma2_ChatBot/logger",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Black\Netology\JD\Projects\Diploma2_ChatBot\server" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ChatServer">
+  <component name="RunManager" selected="Application.ClientWindow">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="olegivanov.k_chat.server.ChatServer" />
       <module name="server" />
@@ -109,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.ClientWindow" />
+        <item itemvalue="Application.ChatServer" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685627992226</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Logger class - updated">
+      <created>1685797179535</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685797179535</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,7 +230,8 @@
     <MESSAGE value="Client window 2st stage - Connection v2" />
     <MESSAGE value="Config class - updated but not resolved" />
     <MESSAGE value="Config class - updated 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config class - updated 2" />
+    <MESSAGE value="Logger class - updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logger class - updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

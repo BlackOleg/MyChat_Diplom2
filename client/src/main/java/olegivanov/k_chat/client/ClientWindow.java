@@ -1,5 +1,7 @@
 package olegivanov.k_chat.client;
 
+import olegivanov.logger.Log;
+import olegivanov.network.Config;
 import olegivanov.network.Connection;
 import olegivanov.network.ConnectionListener;
 
@@ -9,20 +11,27 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
+import static olegivanov.logger.Log.getInstance;
+
 public class ClientWindow extends JFrame implements ActionListener, ConnectionListener {
+    private static String nick="Noname";
     private static String ip_addr = "127.0.0.1";
     private static int port = 8189;
     private static final int WITH = 600;
     private static final int HEIGHT = 400;
-    private final JTextArea msgFrame = new JTextArea();
+    private final JTextArea msgFrame = new JTextArea(22,50);
+    JPanel msgPanel = new JPanel();
+    JPanel topPanel = new JPanel();
+    JScrollPane scroller = new JScrollPane(msgFrame);
     private final JLabel userLabel = new JLabel("User name: ");
-    private static JTextField nickName = new JTextField();
+    private static JTextField nickName = new JTextField(nick);
     private final JLabel textLabel = new JLabel("Input your message: ");
     private final JTextField inputMessage = new JTextField();
     private static Connection connection;
-
+    Log log = getInstance("Client");
     public static void main(String[] args) {
         InputParameters();
+
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
@@ -33,20 +42,23 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
 
     private ClientWindow() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Стандартный выход/закрытие по крестику из окна
-        setSize(WITH, HEIGHT); // задаем размеры размеры по-умодчанию
+        setSize(WITH, HEIGHT); // задаем размеры по-умодчанию
         setLocationByPlatform(true); // расположение задает Windows
-        setAlwaysOnTop(true); // всегда  поверх экрана
-        setTitle("Simple Messenger - with user: " + nickName.getText()); // подписываем окно сообщений
+        setAlwaysOnTop(true);
+        setTitle("Simple Messenger - with user: " + nick); // подписываем окно сообщений
         setResizable(true); // может менять размер
         msgFrame.setLineWrap(true); // включение Wrap on
         msgFrame.setEditable(false); // не редактируемый
-
-        //add(userLabel,BorderLayout.NORTH);
-        //add(nickName,BorderLayout.AFTER_LINE_ENDS);
-        add(msgFrame, BorderLayout.CENTER); // добавляем компоненты ..
-        add(textLabel, BorderLayout.SOUTH);
+        scroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        msgPanel.add(scroller);
+        topPanel.add(userLabel);
+        topPanel.add(nickName);
+        add(topPanel,BorderLayout.NORTH);
+        add(msgPanel, BorderLayout.CENTER); // добавляем компоненты ..
+        //add(textLabel, BorderLayout.SOUTH);
         inputMessage.addActionListener(this); // слушаем нажатие энтер
-        add(inputMessage, BorderLayout.AFTER_LAST_LINE);
+        add(inputMessage, BorderLayout.SOUTH);
 
         setVisible(true); // делаем видимым
         try {
@@ -57,9 +69,12 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
     }
 
     private static void InputParameters() {
-        JTextField addressInput = new JTextField("127.0.0.1", 15);
-        JTextField portInput = new JTextField("8189", 10);
-        JTextField nickInput = new JTextField("Noname", 15);
+        Config config = new Config(); // Читаем адрес и порт из файла
+        ip_addr = config.getAddress();
+        port = config.getPort();
+        JTextField addressInput = new JTextField(ip_addr, 15);
+        JTextField portInput = new JTextField( String.valueOf(port), 10);
+        JTextField nickInput = new JTextField(nick, 15);
 
         JPanel myPanel = new JPanel();
         myPanel.add(new JLabel("Server address: "));
@@ -72,23 +87,23 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
         myPanel.add(nickInput);
 
         int result = JOptionPane.showConfirmDialog(null, myPanel,
-                "Please Enter Server address, port & your nick name", JOptionPane.OK_CANCEL_OPTION);
+                "Please check Server address, port & input your nick name", JOptionPane.OK_CANCEL_OPTION);
         if (result == JOptionPane.OK_OPTION && addressInput.getText().equals("")
                 && portInput.getText().equals("")
                 && nickInput.getText().equals("")) {
             ip_addr = addressInput.getText();
             port = Integer.parseInt(portInput.getText());
-            nickName = nickInput;
+            nick = nickInput.getText();
 
         }
     }
 
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
-String msg = inputMessage.getText();
-if (msg.equals("")) return;
-inputMessage.setText(null);
-connection.sendMsg(nickName.getText() + " says: " + msg);
+        String msg = inputMessage.getText();
+        if (msg.equals("")) return;
+        inputMessage.setText(null);
+        connection.sendMsg(nickName.getText() + " says: " + msg);
 
     }
 
@@ -99,7 +114,7 @@ connection.sendMsg(nickName.getText() + " says: " + msg);
 
     @Override
     public void onReceiveString(Connection connection, String msg) {
-    sendMessage(msg);
+        sendMessage(msg);
     }
 
     @Override
@@ -118,7 +133,9 @@ connection.sendMsg(nickName.getText() + " says: " + msg);
             public void run() {
                 msgFrame.append(msg + "\n");
                 msgFrame.setCaretPosition(msgFrame.getDocument().getLength());
+                log.logInsert(nick,msg);
             }
         });
+
     }
 }

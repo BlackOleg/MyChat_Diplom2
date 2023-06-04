@@ -1,5 +1,8 @@
 package olegivanov.logger;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDateTime;
 
 public class Log {
@@ -40,7 +43,16 @@ public class Log {
         out.append(msg);
         System.out.println(out);
     }
-    private void toFile(String line){
 
+    private void toFile(String line) {
+        try (FileWriter writer = new FileWriter("file.log", true)){
+             BufferedWriter bufferWriter = new BufferedWriter(writer);
+             bufferWriter.write(line);
+             bufferWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Что-то пошло не так " + ex.getMessage());
+        }
     }
+
 }
+
