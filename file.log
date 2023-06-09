@@ -14,3 +14,8 @@
 [2023-06-10T02:15:17.376395100],сlient,Rinat,Guest with TCP: /127.0.0.1 port: 60689:- Rinat says: мало водки
 [2023-06-10T02:29:55.092184700],сlient,Robert,Connection Exception: java.net.ConnectException: Connection refused: connect
 [2023-06-10T02:30:46.842925600],сlient,Noname,Connection Exception: java.net.ConnectException: Connection refused: connect
+[2023-06-10T02:57:57.159880800],сlient,William,Connection ready
+[2023-06-10T02:57:57.175889400],сlient,William,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 61294
+[2023-06-10T02:58:08.155155],сlient,William,Guest with TCP: /127.0.0.1 port: 61294:- William says: HI all
+[2023-06-10T02:58:20.847901900],сlient,William,Guest with TCP: /127.0.0.1 port: 61294:- William says: I'm here
+[2023-06-10T02:58:25.110151900],сlient,William,Guest with TCP: /127.0.0.1 port: 61294:- William says: bye
