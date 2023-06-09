@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Logger class - updated 2">
-      <change afterPath="$PROJECT_DIR$/file.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logger/src/main/resources/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logger/src/main/resources/file.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/file.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/file.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Code and JSON revision">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logger/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/olegivanov/logger/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/main/java/olegivanov/logger/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/network/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.log" beforeDir="false" afterPath="$PROJECT_DIR$/file.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +28,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="NewConfig" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -51,7 +49,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="aafc8ddce52d2495bb1a80cd960efe3a40a64f72" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,7 +109,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClientWindow">
+  <component name="RunManager" selected="Application.ChatServer">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="olegivanov.k_chat.server.ChatServer" />
       <module name="server" />
@@ -140,8 +138,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientWindow" />
         <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.ClientWindow" />
         <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.ClientWindow" />
       </list>
@@ -240,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685904024810</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Code and JSON revision">
+      <created>1686348640365</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686348640365</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -271,33 +276,8 @@
     <MESSAGE value="Config class - updated 2" />
     <MESSAGE value="Logger class - updated" />
     <MESSAGE value="Logger class - updated 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logger class - updated 2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Code and JSON revision" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code and JSON revision" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

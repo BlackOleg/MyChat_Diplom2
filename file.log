@@ -7,3 +7,10 @@
 [2023-06-10T02:08:23.745717400],сlient,Noname,Guest with TCP: /127.0.0.1 port: 60650:- Noname says: вфыфывфв
 [2023-06-10T02:08:48.017593],сlient,Noname,Guest with TCP: /127.0.0.1 port: 60650:- Noname says: Сообщение
 [2023-06-10T02:09:17.688458300],сlient,Noname,Guest with TCP: /127.0.0.1 port: 60650:- Noname says: /exit
+[2023-06-10T02:14:39.740507300],сlient,Rinat,Connection ready
+[2023-06-10T02:14:39.753526500],сlient,Rinat,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 60689
+[2023-06-10T02:14:55.209392800],сlient,Rinat,Guest with TCP: /127.0.0.1 port: 60689:- Rinat says: Hello
+[2023-06-10T02:15:06.576658300],сlient,Rinat,Guest with TCP: /127.0.0.1 port: 60689:- Rinat says: Vbkj
+[2023-06-10T02:15:17.376395100],сlient,Rinat,Guest with TCP: /127.0.0.1 port: 60689:- Rinat says: мало водки
+[2023-06-10T02:29:55.092184700],сlient,Robert,Connection Exception: java.net.ConnectException: Connection refused: connect
+[2023-06-10T02:30:46.842925600],сlient,Noname,Connection Exception: java.net.ConnectException: Connection refused: connect

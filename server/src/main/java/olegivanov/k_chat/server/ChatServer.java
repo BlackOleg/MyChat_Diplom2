@@ -17,7 +17,8 @@ public class ChatServer implements ConnectionListener {
     private final List<Connection> connections = new ArrayList<>();
 
     private ChatServer() {
-        Config config = new Config();
+        Config.load("config.json");
+        Config config = Config.getInstance();
         int port = config.getPort();
         System.out.println("Server is running... on port: " + port);
         try (ServerSocket serverSocket = new ServerSocket(port)) {

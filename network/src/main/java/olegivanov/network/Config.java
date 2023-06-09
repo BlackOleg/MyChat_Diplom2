@@ -29,26 +29,41 @@ public class Config{
         this.port = port;
     }
 
-    public Config() {
-        Config config = loadFile("config.json");
-        if (config == null) {
+    private Config() {
             this.address = "127.0.0.1";
             this.port = 8185;
-        } else {
-            this.address = config.address;
-            this.port = config.port;
-        }
+    }
+    private static Config instance;
 
+    public static Config getInstance() {
+        if (instance == null) {
+            instance = fromDefaults();
+        }
+        return instance;
+    }
+    private static Config fromDefaults() {
+        Config config = new Config();
+        return config;
+    }
+    public static void load(String file) {
+        instance = loadFile(file);
+
+        // no config file found
+        if (instance == null) {
+            instance = fromDefaults();
+        }
     }
 
+//    public static void load(String file) {
+//        load(new File(file));
+//    }
+
+
+
     public static Config loadFile(String file) {
-        //Type listType = new TypeToken<List<Config>>() {}.getType();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        //System.out.println("DIR:  - " + System.getProperty("user.dir"));
-        try  {
-            BufferedReader reader= new BufferedReader(new FileReader(file));
-            //JsonElement json = gson.fromJson(reader, JsonElement.class);
-           // System.out.println(gson.fromJson(reader, Config.class).address);
+        try (FileReader reader = new FileReader(file)) {
+
             return gson.fromJson(reader, Config.class);
         } catch (FileNotFoundException e) {
             System.out.println("Config File - NotFound - Error" + e.getMessage());

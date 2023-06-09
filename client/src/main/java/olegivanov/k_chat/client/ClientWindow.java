@@ -69,7 +69,8 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
     }
 
     private static void InputParameters() {
-        Config config = new Config();
+        Config.load("config.json");
+        Config config = Config.getInstance();
         ip_addr = config.getAddress();
         port = config.getPort();
         JTextField addressInput = new JTextField(ip_addr, 15);
@@ -88,9 +89,9 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
 
         int result = JOptionPane.showConfirmDialog(null, myPanel,
                 "Please check Server address, port & input your nick name", JOptionPane.OK_CANCEL_OPTION);
-        if (result == JOptionPane.OK_OPTION && addressInput.getText().equals("")
-                && portInput.getText().equals("")
-                && nickInput.getText().equals("")) {
+        if (result == JOptionPane.OK_OPTION && !addressInput.getText().equals("")
+                && !portInput.getText().equals("")
+                && !nickInput.getText().equals("")) {
             ip_addr = addressInput.getText();
             port = Integer.parseInt(portInput.getText());
             nick = nickInput.getText();
