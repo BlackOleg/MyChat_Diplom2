@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Logger class - updated">
+    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Logger class - updated 2">
+      <change afterPath="$PROJECT_DIR$/file.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger/src/main/resources/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger/src/main/resources/file.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/file.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger/src/main/java/olegivanov/logger/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/main/java/olegivanov/logger/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/network/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +49,11 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="aafc8ddce52d2495bb1a80cd960efe3a40a64f72" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -55,7 +74,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2PSJnIXqV1kuObHUGes0jsrY61g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -72,16 +91,24 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "jbr-17",
-    "last_opened_file_path": "C:/Black/Netology/JD/Projects/Diploma2_ChatBot/logger",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Black/Netology/JD/Projects/Diploma2_ChatBot",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Black\Netology\JD\Projects\Diploma2_ChatBot" />
       <recent name="C:\Black\Netology\JD\Projects\Diploma2_ChatBot\server" />
+      <recent name="C:\Black\Netology\JD\Projects\Diploma2_ChatBot\logger\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Black\Netology\JD\Projects\Diploma2_ChatBot\server\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ClientWindow">
@@ -115,6 +142,8 @@
       <list>
         <item itemvalue="Application.ClientWindow" />
         <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.ClientWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -204,8 +233,18 @@
       <option name="project" value="LOCAL" />
       <updated>1685797179535</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Logger class - updated 2">
+      <created>1685904024810</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685904024810</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -231,28 +270,38 @@
     <MESSAGE value="Config class - updated but not resolved" />
     <MESSAGE value="Config class - updated 2" />
     <MESSAGE value="Logger class - updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logger class - updated" />
+    <MESSAGE value="Logger class - updated 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logger class - updated 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="19" />
+          <line>45</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="22" />
+          <line>51</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="23" />
+          <line>58</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/network/src/main/java/olegivanov/network/Config.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Diploma2_ChatBot$ChatServer.ic" NAME="ChatServer Coverage Results" MODIFIED="1685474498621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

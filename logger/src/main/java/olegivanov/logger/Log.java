@@ -41,14 +41,16 @@ public class Log {
         out.append(who);
         out.append(",");
         out.append(msg);
+        out.append("\r\n");
         System.out.println(out);
+        toFile(String.valueOf(out));
     }
 
     private void toFile(String line) {
         try (FileWriter writer = new FileWriter("file.log", true)){
              BufferedWriter bufferWriter = new BufferedWriter(writer);
              bufferWriter.write(line);
-             bufferWriter.close();
+             bufferWriter.flush();
         } catch (IOException ex) {
             System.out.println("Что-то пошло не так " + ex.getMessage());
         }

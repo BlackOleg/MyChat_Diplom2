@@ -28,7 +28,7 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
     private final JLabel textLabel = new JLabel("Input your message: ");
     private final JTextField inputMessage = new JTextField();
     private static Connection connection;
-    Log log = getInstance("Client");
+    Log log = getInstance("сlient");
     public static void main(String[] args) {
         InputParameters();
 
@@ -69,7 +69,7 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
     }
 
     private static void InputParameters() {
-        Config config = new Config(); // Читаем адрес и порт из файла
+        Config config = new Config();
         ip_addr = config.getAddress();
         port = config.getPort();
         JTextField addressInput = new JTextField(ip_addr, 15);
@@ -103,7 +103,7 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
         String msg = inputMessage.getText();
         if (msg.equals("")) return;
         inputMessage.setText(null);
-        connection.sendMsg(nickName.getText() + " says: " + msg);
+        connection.sendMsg(nick + " says: " + msg);
 
     }
 

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ChatServer implements ConnectionListener {
     public static void main(String[] args) {
-                new ChatServer();
+        new ChatServer();
     }
 
     private final List<Connection> connections = new ArrayList<>();
@@ -61,10 +61,11 @@ public class ChatServer implements ConnectionListener {
     private void sendAll(String value) {
         System.out.println(value);
         final int allI = connections.size();
-        for (int i = 0; i < allI; i++) {
-            connections.get(i).sendMsg(value);
+        for (Connection connection : connections) {
+            connection.sendMsg(value);
         }
 
 
     }
+
 }

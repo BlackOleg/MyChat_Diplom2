@@ -4,12 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.annotations.SerializedName;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
-public class Config {
+public class Config{
 
     @SerializedName("address")
     private String address;
@@ -45,9 +42,11 @@ public class Config {
     }
 
     public static Config loadFile(String file) {
+        //Type listType = new TypeToken<List<Config>>() {}.getType();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         //System.out.println("DIR:  - " + System.getProperty("user.dir"));
-        try (FileReader reader = new FileReader(file)) {
+        try  {
+            BufferedReader reader= new BufferedReader(new FileReader(file));
             //JsonElement json = gson.fromJson(reader, JsonElement.class);
            // System.out.println(gson.fromJson(reader, Config.class).address);
             return gson.fromJson(reader, Config.class);
@@ -58,11 +57,11 @@ public class Config {
             System.out.println("IO - Error" + e2.getMessage() );
             return null;
         }  catch (Exception e3) {
-        System.out.println("All other Errors" + e3.getMessage());
-        return null;
+            System.out.println("All other Errors" + e3.getMessage());
+            return null;
         }
     }
-        public void toFile(String file) {
+    public void toFile(String file) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonConfig = gson.toJson(this);
 
@@ -80,4 +79,3 @@ public class Config {
         return gson.toJson(this);
     }
 }
-

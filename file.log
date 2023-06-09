@@ -1,0 +1,9 @@
+[2023-06-08T00:45:40.269146],Client,Noname,Connection ready[2023-06-08T00:45:40.302161400],Client,Noname,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 53505[2023-06-08T00:45:43.491829800],Client,Noname,Guest with TCP: /127.0.0.1 port: 53505:- Noname says: ASasS[2023-06-08T00:45:46.223549100],Client,Noname,Guest with TCP: /127.0.0.1 port: 53505:- Noname says: SasASS[2023-06-08T00:45:47.791813500],Client,Noname,Guest with TCP: /127.0.0.1 port: 53505:- Noname says: asAS[2023-06-08T00:45:48.830721400],Client,Noname,Guest with TCP: /127.0.0.1 port: 53505:- Noname says: asAS[2023-06-08T00:45:49.975472900],Client,Noname,Guest with TCP: /127.0.0.1 port: 53505:- Noname says: asAS[2023-06-08T00:45:51.143756500],Client,Noname,Guest with TCP: /127.0.0.1 port: 53505:- Noname says: asAS[2023-06-08T00:46:20.215234400],Client,Noname,Guest with TCP: /127.0.0.1 port: 53505:- Noname says: /exit[2023-06-08T00:46:28.831523],Client,Noname,Guest with TCP: /127.0.0.1 port: 53505:- Noname says: exit[2023-06-10T00:34:39.294300800],сlient,Noname,Connection Exception: java.net.ConnectException: Connection refused: connect
+[2023-06-10T00:36:17.592775800],сlient,Noname,Connection Exception: java.net.ConnectException: Connection refused: connect
+[2023-06-10T02:07:48.055780800],сlient,Noname,Connection ready
+[2023-06-10T02:07:48.075782900],сlient,Noname,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 60650
+[2023-06-10T02:08:11.348729800],сlient,Noname,Guest with TCP: /127.0.0.1 port: 60650:- Noname says: Привет
+[2023-06-10T02:08:19.121596],сlient,Noname,Guest with TCP: /127.0.0.1 port: 60650:- Noname says: ффывфыв
+[2023-06-10T02:08:23.745717400],сlient,Noname,Guest with TCP: /127.0.0.1 port: 60650:- Noname says: вфыфывфв
+[2023-06-10T02:08:48.017593],сlient,Noname,Guest with TCP: /127.0.0.1 port: 60650:- Noname says: Сообщение
+[2023-06-10T02:09:17.688458300],сlient,Noname,Guest with TCP: /127.0.0.1 port: 60650:- Noname says: /exit
