@@ -19,3 +19,11 @@
 [2023-06-10T02:58:08.155155],сlient,William,Guest with TCP: /127.0.0.1 port: 61294:- William says: HI all
 [2023-06-10T02:58:20.847901900],сlient,William,Guest with TCP: /127.0.0.1 port: 61294:- William says: I'm here
 [2023-06-10T02:58:25.110151900],сlient,William,Guest with TCP: /127.0.0.1 port: 61294:- William says: bye
+[2023-06-11T00:09:24.601297300],сlient,ROGER,Connection ready
+[2023-06-11T00:09:24.624303700],сlient,ROGER,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 54469
+[2023-06-11T00:09:47.818189700],сlient,ROGER,Guest with TCP: /127.0.0.1 port: 54469:- ROGER says: Hello everybody!!!!
+[2023-06-11T00:09:58.548473700],сlient,ROGER,Guest with TCP: /127.0.0.1 port: 54469:- ROGER says: Hey ! HEY
+[2023-06-11T00:10:04.469351400],сlient,ROGER,Guest with TCP: /127.0.0.1 port: 54469:- ROGER says: it works!!!
+[2023-06-11T01:37:25.160415400],сlient,ddd,Connection ready
+[2023-06-11T01:37:25.172413900],сlient,ddd,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52219
+[2023-06-11T01:39:06.408146600],сlient,ddd,Guest with TCP: /127.0.0.1 port: 52219:- ddd says: asaasa

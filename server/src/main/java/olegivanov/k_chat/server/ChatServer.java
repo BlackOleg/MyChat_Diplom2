@@ -1,5 +1,6 @@
 package olegivanov.k_chat.server;
 
+import olegivanov.logger.Log;
 import olegivanov.network.Config;
 import olegivanov.network.Connection;
 import olegivanov.network.ConnectionListener;
@@ -9,22 +10,26 @@ import java.net.ServerSocket;
 import java.util.ArrayList;
 import java.util.List;
 
+import static olegivanov.logger.Log.getInstance;
+
 public class ChatServer implements ConnectionListener {
     public static void main(String[] args) {
-        new ChatServer();
+        new ChatServer().go();
     }
 
-    private final List<Connection> connections = new ArrayList<>();
+    private Log log = getInstance("server");
+    private List<Connection> connections;
+    private final int port;
 
-    private ChatServer() {
-        Config.load("config.json");
-        Config config = Config.getInstance();
-        int port = config.getPort();
-        System.out.println("Server is running... on port: " + port);
+    public void go() {
+        connections = new ArrayList<>();
+
         try (ServerSocket serverSocket = new ServerSocket(port)) {
+            System.out.println("got a connection on port: " + port);
             while (true) {
                 try {
-                    new Connection(this, serverSocket.accept());
+                    new Connection(this, serverSocket.accept()).go();
+
                 } catch (IOException e) {
                     System.out.println("TCPConnection Exception: " + e);
                 }
@@ -32,6 +37,13 @@ public class ChatServer implements ConnectionListener {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+    }
+
+    private ChatServer() {
+        Config.load("config.json");
+        Config config = Config.getInstance();
+        this.port = config.getPort();
     }
 
     @Override
