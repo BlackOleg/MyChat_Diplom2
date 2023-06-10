@@ -26,6 +26,7 @@ public class ChatServer implements ConnectionListener {
 
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             System.out.println("got a connection on port: " + port);
+            log.logInsert("service", "Server started on port: " + port);
             while (true) {
                 try {
                     new Connection(this, serverSocket.accept()).go();
@@ -72,6 +73,7 @@ public class ChatServer implements ConnectionListener {
     }
 
     private void sendAll(String value) {
+        log.logInsert("service", value);
         System.out.println(value);
         final int allI = connections.size();
         for (Connection connection : connections) {

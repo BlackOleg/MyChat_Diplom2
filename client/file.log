@@ -8,3 +8,16 @@
 [2023-06-11T01:47:57.603653100],client,Monya,Connection ready
 [2023-06-11T01:47:57.613654400],client,Monya,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52277
 [2023-06-11T01:48:06.449148900],client,Monya,Guest with TCP: /127.0.0.1 port: 52277:- Monya says: Привет
+[2023-06-11T01:52:55.645206400],client,Oleg,Connection ready
+[2023-06-11T01:52:55.658205200],client,Oleg,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52327
+[2023-06-11T01:53:12.364514200],client,Oleg,Guest with TCP: /127.0.0.1 port: 52327:- Oleg says: ВСЕМ ПРИВЕТ!!
+[2023-06-11T01:57:28.309109],client,FOMA,Connection ready
+[2023-06-11T01:57:28.314112300],client,FOMA,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52343
+[2023-06-11T01:57:41.422430800],client,FOMA,Guest with TCP: /127.0.0.1 port: 52343:- FOMA says: HI all
+[2023-06-11T01:57:52.245675400],client,FOMA,Guest with TCP: /127.0.0.1 port: 52343:- FOMA says: welcome  to my chat
+[2023-06-11T01:57:59.517082500],client,FOMA,Guest with TCP: /127.0.0.1 port: 52343:- FOMA says: bye!!
+[2023-06-11T02:07:52.399844300],client,KOLYA,Connection ready
+[2023-06-11T02:07:52.416839600],client,KOLYA,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52415
+[2023-06-11T02:08:13.699422900],client,KOLYA,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: HI!
+[2023-06-11T02:08:27.421808300],client,KOLYA,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: Anybody is  here?
+[2023-06-11T02:08:53.134144900],client,KOLYA,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: /Exit

@@ -132,12 +132,13 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
     }
 
     private synchronized void sendMessage(String msg) {
+        log.logInsert(nick, msg);
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
                 msgFrame.append(msg + "\n");
                 msgFrame.setCaretPosition(msgFrame.getDocument().getLength());
-                log.logInsert(nick, msg);
+
             }
         });
 

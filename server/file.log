@@ -1,0 +1,7 @@
+[2023-06-11T02:05:49.401901800],server,server,Server started on port: 5000
+[2023-06-11T02:07:19.492213400],server,service,Server started on port: 5000
+[2023-06-11T02:07:52.409837200],server,service,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52415
+[2023-06-11T02:08:13.698423200],server,service,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: HI!
+[2023-06-11T02:08:27.420808],server,service,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: Anybody is  here?
+[2023-06-11T02:08:53.133144],server,service,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: /Exit
+[2023-06-11T02:08:58.012426500],server,service,Client disconnected! GOODBYE - Guest with TCP: /127.0.0.1 port: 52415
