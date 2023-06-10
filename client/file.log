@@ -1,0 +1,10 @@
+[2023-06-11T00:56:27.525476100],сlient,dddd,Connection ready
+[2023-06-11T00:56:27.538479200],сlient,dddd,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 51937
+[2023-06-11T00:56:41.050824700],сlient,dddd,Guest with TCP: /127.0.0.1 port: 51937:- dddd says: HI
+[2023-06-11T01:46:27.074240700],client,FEDYA,Connection ready
+[2023-06-11T01:46:27.082242],client,FEDYA,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52271
+[2023-06-11T01:46:36.518891300],client,FEDYA,Guest with TCP: /127.0.0.1 port: 52271:- FEDYA says: Hello
+[2023-06-11T01:46:41.524180400],client,FEDYA,Guest with TCP: /127.0.0.1 port: 52271:- FEDYA says: Hallo
+[2023-06-11T01:47:57.603653100],client,Monya,Connection ready
+[2023-06-11T01:47:57.613654400],client,Monya,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52277
+[2023-06-11T01:48:06.449148900],client,Monya,Guest with TCP: /127.0.0.1 port: 52277:- Monya says: Привет
