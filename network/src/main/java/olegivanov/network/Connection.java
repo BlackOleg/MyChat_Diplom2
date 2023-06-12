@@ -19,25 +19,7 @@ public class Connection implements Runnable {
         this.socket = socket;
         in = new BufferedReader(new InputStreamReader(socket.getInputStream(), Charset.forName("UTF-8")));
         out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), Charset.forName("UTF-8")));
-        //rxThread = new Thread(Connection.this);
-//                new Runnable() {
-//            @Override
-//            public void run() {
-//                try {
-//                    eventListener.onConnectionReady(Connection.this);
-//                    while (rxThread.isAlive()) {
-//                        eventListener.onReceiveString(Connection.this, in.readLine());
-//                    }
-//
-//                } catch (IOException e) {
-//                    eventListener.onException(Connection.this, e);
-//                } finally {
-//                    eventListener.onDisconnect(Connection.this);
-//                }
-//
-//            }
-//        });
-       // rxThread.start();
+
     }
 
     public synchronized void sendMsg(String msg) {

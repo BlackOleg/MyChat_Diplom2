@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="JSON &amp; Config class revised in main branch">
-      <change afterPath="$PROJECT_DIR$/server/file.log" afterDir="false" />
+    <list default="true" id="7c5121e2-a1e3-4270-81be-3fece7acd04a" name="Changes" comment="Log completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/file.log" beforeDir="false" afterPath="$PROJECT_DIR$/client/file.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/olegivanov/k_chat/client/ClientWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/olegivanov/k_chat/server/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/main/java/olegivanov/network/Connection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686351555253</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Log completed">
+      <created>1686435038589</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686435038589</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -291,7 +294,8 @@
     <MESSAGE value="Logger class - updated 2" />
     <MESSAGE value="Code and JSON revision" />
     <MESSAGE value="JSON &amp; Config class revised in main branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSON &amp; Config class revised in main branch" />
+    <MESSAGE value="Log completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Log completed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
