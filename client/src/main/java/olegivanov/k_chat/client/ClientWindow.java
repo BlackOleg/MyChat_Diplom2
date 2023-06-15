@@ -24,7 +24,7 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
     JPanel topPanel = new JPanel();
     JScrollPane scroller = new JScrollPane(msgFrame);
     private final JLabel userLabel = new JLabel("User name: ");
-    private static JTextField nickName = new JTextField(nick);
+    private static JTextField nickName;
     private final JLabel textLabel = new JLabel("Input your message: ");
     private final JTextField inputMessage = new JTextField();
     private static Connection connection;
@@ -98,7 +98,7 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
             ip_addr = addressInput.getText();
             port = Integer.parseInt(portInput.getText());
             nick = nickInput.getText();
-
+            nickName = new JTextField(nick);
         }
     }
 
@@ -118,6 +118,10 @@ public class ClientWindow extends JFrame implements ActionListener, ConnectionLi
 
     @Override
     public void onReceiveString(Connection connection, String msg) {
+        if (msg.indexOf("exit") >= 0) {
+            System.out.println("Client wants to disconnect!");
+            connection.disconnect();
+        }
         sendMessage(msg);
     }
 

@@ -5,3 +5,34 @@
 [2023-06-11T02:08:27.420808],server,service,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: Anybody is  here?
 [2023-06-11T02:08:53.133144],server,service,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: /Exit
 [2023-06-11T02:08:58.012426500],server,service,Client disconnected! GOODBYE - Guest with TCP: /127.0.0.1 port: 52415
+[2023-06-15T23:56:06.339520500],server,service,Server started on port: 5000
+[2023-06-15T23:56:24.794709400],server,service,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 61758
+[2023-06-15T23:56:47.047939400],server,service,Guest with TCP: /127.0.0.1 port: 61758:- Milord says: Good evening
+[2023-06-15T23:56:57.467596200],server,service,Guest with TCP: /127.0.0.1 port: 61758:- Milord says: and....
+[2023-06-15T23:57:02.635794400],server,service,Guest with TCP: /127.0.0.1 port: 61758:- Milord says: BYE!!!
+[2023-06-15T23:57:09.651970700],server,service,Guest with TCP: /127.0.0.1 port: 61758:- Milord says: /exit
+[2023-06-16T00:16:07.526045700],server,service,Server started on port: 5000
+[2023-06-16T00:16:49.779551200],server,service,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 51965
+[2023-06-16T00:17:04.296789700],server,service,Guest with TCP: /127.0.0.1 port: 51965:- Felix says: HI!
+[2023-06-16T00:17:17.242911500],server,service,Guest with TCP: /127.0.0.1 port: 51965:- Felix says: Whot do you do?
+[2023-06-16T00:18:10.730961100],server,service,Guest with TCP: /127.0.0.1 port: 51965:- Felix says: Sorry..
+[2023-06-16T00:18:18.610835400],server,service,Guest with TCP: /127.0.0.1 port: 51965:- Felix says: /exit
+[2023-06-16T00:18:42.110614300],server,service,Client disconnected! GOODBYE - Guest with TCP: /127.0.0.1 port: 51965
+[2023-06-16T00:20:30.651463400],server,service,Server started on port: 5000
+[2023-06-16T00:20:42.138402800],server,service,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52063
+[2023-06-16T00:20:47.263514],server,service,Guest with TCP: /127.0.0.1 port: 52063:- Rob says: Hey
+[2023-06-16T00:21:02.602698100],server,service,Guest with TCP: /127.0.0.1 port: 52063:- Rob says: How are you
+[2023-06-16T00:21:07.019051200],server,service,Guest with TCP: /127.0.0.1 port: 52063:- Rob says: ?
+[2023-06-16T00:21:14.162499100],server,service,Client disconnected! GOODBYE - Guest with TCP: /127.0.0.1 port: 52063
+[2023-06-16T00:21:14.163510400],server,service,Guest with TCP: /127.0.0.1 port: 52063:- Rob says: /exit
+[2023-06-16T00:21:47.083342400],server,service,Client disconnected! GOODBYE - Guest with TCP: /127.0.0.1 port: 52063
+[2023-06-16T00:23:29.694078300],server,service,Server started on port: 5000
+[2023-06-16T00:23:48.227283100],server,service,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 49881
+[2023-06-16T00:23:53.415541700],server,service,Guest with TCP: /127.0.0.1 port: 49881:- Fill says: Hey
+[2023-06-16T00:24:00.331834600],server,service,Guest with TCP: /127.0.0.1 port: 49881:- Fill says: /exit
+[2023-06-16T00:24:00.332838700],server,service,Client disconnected! GOODBYE - Guest with TCP: /127.0.0.1 port: 49881
+[2023-06-16T00:30:50.150328300],server,service,Server started on port: 5000
+[2023-06-16T00:31:09.032045900],server,service,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 50028
+[2023-06-16T00:31:20.823184500],server,service,Guest with TCP: /127.0.0.1 port: 50028:- Willy says: This is test
+[2023-06-16T00:31:35.257966200],server,service,Guest with TCP: /127.0.0.1 port: 50028:- Willy says: please saty calm
+[2023-06-16T00:31:40.818611200],server,service,Guest with TCP: /127.0.0.1 port: 50028:- Willy says: exit

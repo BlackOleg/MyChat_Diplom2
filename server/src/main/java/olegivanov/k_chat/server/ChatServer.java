@@ -55,9 +55,10 @@ public class ChatServer implements ConnectionListener {
 
     @Override
     public synchronized void onReceiveString(Connection connection, String msg) {
-        if (msg.equals("/exit")) {
-            connection.disconnect();
-        }
+//        if (msg.indexOf("exit") >= 0) {
+//            System.out.println("Client wants to disconnect!");
+//            connection.disconnect();
+//        }
         sendAll(connection + ":- " + msg);
     }
 

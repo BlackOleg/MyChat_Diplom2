@@ -21,3 +21,25 @@
 [2023-06-11T02:08:13.699422900],client,KOLYA,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: HI!
 [2023-06-11T02:08:27.421808300],client,KOLYA,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: Anybody is  here?
 [2023-06-11T02:08:53.134144900],client,KOLYA,Guest with TCP: /127.0.0.1 port: 52415:- KOLYA says: /Exit
+[2023-06-15T23:56:24.787710],client,Milord,Connection ready
+[2023-06-15T23:56:24.800710700],client,Milord,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 61758
+[2023-06-15T23:56:47.048939900],client,Milord,Guest with TCP: /127.0.0.1 port: 61758:- Milord says: Good evening
+[2023-06-15T23:56:57.468611600],client,Milord,Guest with TCP: /127.0.0.1 port: 61758:- Milord says: and....
+[2023-06-15T23:57:02.636781400],client,Milord,Guest with TCP: /127.0.0.1 port: 61758:- Milord says: BYE!!!
+[2023-06-15T23:57:09.653958100],client,Milord,Guest with TCP: /127.0.0.1 port: 61758:- Milord says: /exit
+[2023-06-16T00:12:00.587619500],client,Milord,Connection Exception: java.net.SocketException: Connection reset
+[2023-06-16T00:12:00.589622100],client,Milord,Connection closed
+[2023-06-16T00:16:49.769545300],client,Felix,Connection ready
+[2023-06-16T00:16:49.784549],client,Felix,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 51965
+[2023-06-16T00:17:04.297788600],client,Felix,Guest with TCP: /127.0.0.1 port: 51965:- Felix says: HI!
+[2023-06-16T00:17:17.243904100],client,Felix,Guest with TCP: /127.0.0.1 port: 51965:- Felix says: Whot do you do?
+[2023-06-16T00:18:10.730961100],client,Felix,Guest with TCP: /127.0.0.1 port: 51965:- Felix says: Sorry..
+[2023-06-16T00:18:18.611833100],client,Felix,Guest with TCP: /127.0.0.1 port: 51965:- Felix says: /exit
+[2023-06-16T00:20:42.131406],client,Rob,Connection ready
+[2023-06-16T00:20:42.145401200],client,Rob,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 52063
+[2023-06-16T00:20:47.264527800],client,Rob,Guest with TCP: /127.0.0.1 port: 52063:- Rob says: Hey
+[2023-06-16T00:21:02.603705200],client,Rob,Guest with TCP: /127.0.0.1 port: 52063:- Rob says: How are you
+[2023-06-16T00:21:07.020045600],client,Rob,Guest with TCP: /127.0.0.1 port: 52063:- Rob says: ?
+[2023-06-16T00:23:48.218277900],client,Fill,Connection ready
+[2023-06-16T00:23:48.234280],client,Fill,Client connected! WELCOME - Guest with TCP: /127.0.0.1 port: 49881
+[2023-06-16T00:23:53.416541700],client,Fill,Guest with TCP: /127.0.0.1 port: 49881:- Fill says: Hey
